@@ -1,0 +1,76 @@
+.spinner-wrapper{
+    padding: 100px 0px;
+}
+
+.spinner-row{
+    display: flex;
+}
+.spinner-row--top{
+    justify-content: center;
+    transform: translateY($circle-diameter / 4);
+    transition: transform .2s linear;
+  @media screen and (min-width: $mob-s) {
+    transform: translateY(($circle-diameter * 2)/ 4);
+  }
+  @media screen and (min-width: $mob-m) {
+    transform: translateY(($circle-diameter * 2.5)/ 4);
+  }
+  @media screen and (min-width: $mob-l) {
+    transform: translateY(($circle-diameter * 3)/ 4);
+  }
+  @media screen and (min-width: $tablet) {
+    transform: translateY(($circle-diameter * 4)/ 4);
+  }
+  @media screen and (min-width: $laptop) {
+    transform: translateY(($circle-diameter * 5)/ 4);
+  }
+  @media screen and (min-width: $laptop-l) {
+    transform: translateY(($circle-diameter * 6)/ 4);
+  }
+}
+.spinner-row--bottom{
+    justify-content: space-around;
+    .circle:first-child{
+        transform: translateX($circle-diameter / 8);
+        @media screen and (min-width: $mob-s) {
+            transform: translateX(($circle-diameter * 2)/ 8);
+          }
+          @media screen and (min-width: $mob-m) {
+            transform: translateX(($circle-diameter * 2.5)/ 8);
+          }
+          @media screen and (min-width: $mob-l) {
+            transform: translateX(($circle-diameter * 3)/ 8);
+          }
+          @media screen and (min-width: $tablet) {
+            transform: translateX(($circle-diameter * 4)/ 8);
+          }
+          @media screen and (min-width: $laptop) {
+            transform: translateX(($circle-diameter * 5)/ 8);
+          }
+          @media screen and (min-width: $laptop-l) {
+            transform: translateX(($circle-diameter * 6)/ 8);
+          }
+    }
+    .circle:last-child{
+        transform: translateY($circle-diameter / -8);
+        @media screen and (min-width: $mob-s) {
+            transform: translateX(($circle-diameter * 2)/ -8);
+          }
+          @media screen and (min-width: $mob-m) {
+            transform: translateX(($circle-diameter * 2.5)/ -8);
+          }
+          @media screen and (min-width: $mob-l) {
+            transform: translateX(($circle-diameter * 3)/ -8);
+          }
+          @media screen and (min-width: $tablet) {
+            transform: translateX(($circle-diameter * 4)/ -8);
+          }
+          @media screen and (min-width: $laptop) {
+            transform: translateX(($circle-diameter * 5)/ -8);
+          }
+          @media screen and (min-width: $laptop-l) {
+            transform: translateX(($circle-diameter * 6)/ -8);
+          }
+    }
+}
+

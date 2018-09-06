@@ -1,0 +1,27 @@
+.container{
+    margin: 0 5%;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-align--center{
+    align-items: center;
+}
+.flex-content--center{
+    justify-content: center;
+}
+
+.layout-wrapper{
+    height: auto;
+}
+
+.layout-vp--full-height{
+    height: 100vh;
+    overflow: auto;
+}
+
+.main-content{
+    height: auto;
+}
