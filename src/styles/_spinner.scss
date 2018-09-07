@@ -1,5 +1,7 @@
 .spinner-wrapper{
     padding: 100px 0px;
+    transform: rotate(30deg);
+    transition: transform .5s linear;
 }
 
 .spinner-row{
@@ -74,27 +76,28 @@
     }
 }
 
-
 .spinner-button-block{
-    transform: translate( $circle-diameter * .75 , $circle-diameter);
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top : ($circle-diameter * -1) - 10px;
     z-index: 100;
     @media screen and (min-width: $mob-s) {
-        transform: translate( ($circle-diameter * 2 ) * .75 , $circle-diameter * 2);
+        top : ($circle-diameter * -2) - 10px;
       }
       @media screen and (min-width: $mob-m) {
-        transform: translate( ($circle-diameter * 2.5 ) * .75 , $circle-diameter * 2.5);
+        top : ( $circle-diameter * -2.5) - 10px;
       }
       @media screen and (min-width: $mob-l) {
-        transform: translate( ($circle-diameter * 3 ) * .75 , $circle-diameter * 3);
+        top : ($circle-diameter * -3) - 10px;
       }
       @media screen and (min-width: $tablet) {
-        transform: translate( ($circle-diameter * 4 ) * .75 , $circle-diameter * 4);
+        top : ($circle-diameter * -4) - 10px;
       }
       @media screen and (min-width: $laptop) {
-        transform: translate( ($circle-diameter * 5 ) * .75 , $circle-diameter * 5);
+        top : ($circle-diameter * -5) - 10px;
       }
       @media screen and (min-width: $laptop-l) {
-        transform: translate( ($circle-diameter * 6 ) * .75 , $circle-diameter * 6);
+        top :( $circle-diameter * -6) - 10px;
       }
 }

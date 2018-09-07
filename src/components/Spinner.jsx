@@ -7,15 +7,15 @@ const Spinner = () => (
     <div className="container">
       <div className="flex flex-align--center flex-content--center">
         <div className="spinner-wrapper">
-          <div className="spinner-button-block">
-            <Circle color="blue" isButton={true}/>
-          </div>
           <div className="spinner-row spinner-row--top">
-            <Circle />
+            <Circle shadow="type1"/>
           </div>
           <div className="spinner-row spinner-row--bottom">
-            <Circle />
-            <Circle />
+            <Circle shadow="type1"/>
+            <Circle shadow="type2"/>
+          </div>
+          <div className="spinner-button-block">
+            <Circle color="yellow" isButton={true}/>
           </div>
         </div>
       </div>

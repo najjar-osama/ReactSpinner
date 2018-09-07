@@ -29,7 +29,15 @@
   }
 }
 
+.circle-shadow-1{
+  box-shadow: 9px 9px 9px 0px rgba(0, 0, 0, 0.5);
+}
+.circle-shadow-2{
+  box-shadow: 9px 3px 4px rgba(0,0,0,.5);
+}
 .circle-button{
+  cursor: pointer;
+  border: 10px solid #FCD05C;
   height: $circle-diameter / 2;
   width: $circle-diameter / 2;
   @media screen and (min-width: $mob-s) {
@@ -38,7 +46,7 @@
   }
   @media screen and (min-width: $mob-m) {
     height: $circle-diameter * 1.25 ;
-    width: $circle-diameter * 1.23
+    width: $circle-diameter * 1.25
   }
   @media screen and (min-width: $mob-l) {
     height:  $circle-diameter * 1.5;
@@ -58,12 +66,12 @@
   }
 }
 
-.circle--red {
-  background-color: red;
+.circle--yellow {
+  background-color: #EEFF56;
 }
 
-.circle--blue {
-  background-color: blue;
+.circle--green{
+  background-color: #23D385;
 }
 
 .circle-row {
