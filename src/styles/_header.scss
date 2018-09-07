@@ -1,0 +1,30 @@
+.header-wrapper {
+  text-align: center;
+}
+
+.header {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0px 0px 0px;
+  text-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+  transition: font-size .2s ease-in-out;
+  @media screen and (min-width: $mob-s) {
+      font-size: 35px;
+  }
+  @media screen and (min-width: $mob-m) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: $mob-l) {
+    font-size: 45px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: $laptop) {
+    font-size: 55px;
+  }
+  @media screen and (min-width: $laptop-l) {
+    font-size: 60px;
+  }
+}

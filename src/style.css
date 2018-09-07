@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -356,8 +357,16 @@ td,
 th {
   padding: 0; }
 
+html {
+  font-family: 'Open Sans',sans-serif; }
+
 body {
-  background: #489BC4; }
+  background: #2980b9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #6dd5fa, #2980b9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #6dd5fa, #2980b9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 * {
   box-sizing: border-box; }
@@ -558,7 +567,7 @@ body {
       border-bottom-width: 70px; } }
 
 .spinner-wrapper {
-  padding: 100px 0px;
+  padding: 15px;
   transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1); }
 
 .spinner-row {
@@ -637,3 +646,32 @@ body {
   @media screen and (min-width: 1440px) {
     .spinner-button-block {
       top: -250px; } }
+
+.header-wrapper {
+  text-align: center; }
+
+.header {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0px 0px 0px;
+  text-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+  transition: font-size .2s ease-in-out; }
+  @media screen and (min-width: 320px) {
+    .header {
+      font-size: 35px; } }
+  @media screen and (min-width: 375px) {
+    .header {
+      font-size: 40px; } }
+  @media screen and (min-width: 425px) {
+    .header {
+      font-size: 45px; } }
+  @media screen and (min-width: 768px) {
+    .header {
+      font-size: 50px; } }
+  @media screen and (min-width: 1024px) {
+    .header {
+      font-size: 55px; } }
+  @media screen and (min-width: 1440px) {
+    .header {
+      font-size: 60px; } }
