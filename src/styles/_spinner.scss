@@ -74,3 +74,27 @@
     }
 }
 
+
+.spinner-button-block{
+    transform: translate( $circle-diameter * .75 , $circle-diameter);
+    position: absolute;
+    z-index: 100;
+    @media screen and (min-width: $mob-s) {
+        transform: translate( ($circle-diameter * 2 ) * .75 , $circle-diameter * 2);
+      }
+      @media screen and (min-width: $mob-m) {
+        transform: translate( ($circle-diameter * 2.5 ) * .75 , $circle-diameter * 2.5);
+      }
+      @media screen and (min-width: $mob-l) {
+        transform: translate( ($circle-diameter * 3 ) * .75 , $circle-diameter * 3);
+      }
+      @media screen and (min-width: $tablet) {
+        transform: translate( ($circle-diameter * 4 ) * .75 , $circle-diameter * 4);
+      }
+      @media screen and (min-width: $laptop) {
+        transform: translate( ($circle-diameter * 5 ) * .75 , $circle-diameter * 5);
+      }
+      @media screen and (min-width: $laptop-l) {
+        transform: translate( ($circle-diameter * 6 ) * .75 , $circle-diameter * 6);
+      }
+}

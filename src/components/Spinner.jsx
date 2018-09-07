@@ -7,6 +7,9 @@ const Spinner = () => (
     <div className="container">
       <div className="flex flex-align--center flex-content--center">
         <div className="spinner-wrapper">
+          <div className="spinner-button-block">
+            <Circle color="blue" isButton={true}/>
+          </div>
           <div className="spinner-row spinner-row--top">
             <Circle />
           </div>

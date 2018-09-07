@@ -29,6 +29,35 @@
   }
 }
 
+.circle-button{
+  height: $circle-diameter / 2;
+  width: $circle-diameter / 2;
+  @media screen and (min-width: $mob-s) {
+    height: $circle-diameter;
+    width: $circle-diameter;
+  }
+  @media screen and (min-width: $mob-m) {
+    height: $circle-diameter * 1.25 ;
+    width: $circle-diameter * 1.23
+  }
+  @media screen and (min-width: $mob-l) {
+    height:  $circle-diameter * 1.5;
+    width: $circle-diameter * 1.5;
+  }
+  @media screen and (min-width: $tablet) {
+    height: $circle-diameter * 2;
+    width: $circle-diameter * 2;
+  }
+  @media screen and (min-width: $laptop) {
+    height: $circle-diameter * 2.5;
+    width: $circle-diameter * 2.5;
+  }
+  @media screen and (min-width: $laptop-l) {
+    height: $circle-diameter * 3;
+    width: $circle-diameter * 3;
+  }
+}
+
 .circle--red {
   background-color: red;
 }
