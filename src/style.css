@@ -567,7 +567,9 @@ body {
       border-bottom-width: 70px; } }
 
 .spinner-wrapper {
-  padding: 15px;
+  padding: 15px; }
+
+.spinner-body {
   transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1); }
 
 .spinner-row {
@@ -675,3 +677,27 @@ body {
   @media screen and (min-width: 1440px) {
     .header {
       font-size: 60px; } }
+
+.spinner-control-panel-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+
+.button-group {
+  display: flex;
+  justify-content: space-around; }
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #c72525;
+  outline: none;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 100; }
+  .btn:not(:last-child) {
+    margin-right: 10px; }

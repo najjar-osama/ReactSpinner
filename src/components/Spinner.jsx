@@ -1,6 +1,7 @@
 import React from "react";
 
 import Circle from "./Circle";
+import SpinnerControlPanel from "./SpinnerControlPanel";
 
 class Spinner extends React.Component {
   constructor(props) {
@@ -34,17 +35,23 @@ class Spinner extends React.Component {
       <div className="spinner-root">
         <div className="container">
           <div className="flex flex-align--center flex-content--center">
-            <div className="spinner-wrapper" style={this.state.spinStyle}>
-              <div className="spinner-row spinner-row--top">
-                <Circle shadow="type1" wingBladePosition="top" />
+            <div className="spinner-wrapper" >
+              <div className="spinner-body" style={this.state.spinStyle}>
+                <div className="spinner-row spinner-row--top">
+                  <Circle shadow="type1" wingBladePosition="top" />
+                </div>
+                <div
+                  className="spinner-row spinner-row--center"
+                  onClick={this.spin}
+                >
+                  <Circle color="yellow" isButton={true} />
+                </div>
+                <div className="spinner-row spinner-row--bottom">
+                  <Circle shadow="type1" wingBladePosition="left" />
+                  <Circle shadow="type2" wingBladePosition="right" />
+                </div>
               </div>
-              <div className="spinner-row spinner-row--center" onClick={this.spin}>
-                <Circle color="yellow" isButton={true}/>
-              </div>
-              <div className="spinner-row spinner-row--bottom">
-                <Circle shadow="type1" wingBladePosition="left" />
-                <Circle shadow="type2" wingBladePosition="right" />
-              </div>
+              <SpinnerControlPanel spin={this.spin}/>
             </div>
           </div>
         </div>

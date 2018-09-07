@@ -1,6 +1,9 @@
 .spinner-wrapper{
     padding: 15px;
-    transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1);
+   
+}
+.spinner-body{
+  transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .spinner-row{
