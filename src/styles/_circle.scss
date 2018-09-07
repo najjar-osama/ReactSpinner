@@ -39,7 +39,12 @@
   cursor: pointer;
   border: 10px solid #FCD05C;
   height: $circle-diameter / 2;
+  position: relative;
   width: $circle-diameter / 2;
+  z-index: 100;
+  &:hover{
+    border-color: darken(#FCD05C,3);
+  }
   @media screen and (min-width: $mob-s) {
     height: $circle-diameter;
     width: $circle-diameter;
@@ -64,6 +69,7 @@
     height: $circle-diameter * 3;
     width: $circle-diameter * 3;
   }
+  
 }
 
 .circle--yellow {
@@ -76,4 +82,100 @@
 
 .circle-row {
   display: inline-block;
+}
+
+.wing-blade-top{
+  border-top-right-radius: $circle-diameter;
+  border-top-style: solid;
+  border-top-color: darken(#23D385,10);
+  border-top-width: 10px;
+  @media screen and (min-width: $mob-s) {
+    border-top-right-radius: $circle-diameter * 2;
+    border-top-width: 20px;
+  }
+  @media screen and (min-width: $mob-m) {
+    border-top-right-radius: $circle-diameter * 2.5;
+    border-top-width: 30px;
+  }
+  @media screen and (min-width: $mob-l) {
+    border-top-right-radius: $circle-diameter * 3;
+    border-top-width: 40px;
+  }
+  @media screen and (min-width: $tablet) {
+    border-top-right-radius: $circle-diameter * 4;
+    border-top-width: 50px;
+  }
+  @media screen and (min-width: $laptop) {
+    border-top-right-radius: $circle-diameter * 5;
+    border-top-width: 60px;
+  }
+  @media screen and (min-width: $laptop-l) {
+    border-top-right-radius: $circle-diameter * 6;
+    border-top-width: 70px;
+  }
+}
+.wing-blade-left{
+  border-bottom-left-radius: $circle-diameter;
+  border-bottom-style: solid;
+  border-bottom-color: darken(#23D385,10);
+  border-bottom-width: 10px;
+  transform: rotate(15deg);
+  border-top-right-radius: 0px;
+  @media screen and (min-width: $mob-s) {
+    border-bottom-left-radius: $circle-diameter * 2;
+    border-bottom-width: 20px;
+  }
+  @media screen and (min-width: $mob-m) {
+    border-bottom-left-radius: $circle-diameter * 2.5;
+    border-bottom-width: 30px;
+  }
+  @media screen and (min-width: $mob-l) {
+    border-bottom-left-radius: $circle-diameter * 3;
+    border-bottom-width: 40px;
+  }
+  @media screen and (min-width: $tablet) {
+    border-bottom-left-radius: $circle-diameter * 4;
+    border-bottom-width: 50px;
+  }
+  @media screen and (min-width: $laptop) {
+    border-bottom-left-radius: $circle-diameter * 5;
+    border-bottom-width: 60px;
+  }
+  @media screen and (min-width: $laptop-l) {
+    border-bottom-left-radius: $circle-diameter * 6;
+    border-bottom-width: 70px;
+  }
+  
+}
+.wing-blade-right{
+  border-bottom-right-radius: $circle-diameter;
+  border-bottom-style: solid;
+  border-bottom-color: darken(#23D385,10);
+  border-bottom-width: 10px;
+  border-top-left-radius: 0px;
+  transform: rotate(-15deg);
+  @media screen and (min-width: $mob-s) {
+    border-bottom-right-radius: $circle-diameter * 2;
+    border-bottom-width: 20px;
+  }
+  @media screen and (min-width: $mob-m) {
+    border-bottom-right-radius: $circle-diameter * 2.5;
+    border-bottom-width: 30px;
+  }
+  @media screen and (min-width: $mob-l) {
+    border-bottom-right-radius: $circle-diameter * 3;
+    border-bottom-width: 40px;
+  }
+  @media screen and (min-width: $tablet) {
+    border-bottom-right-radius: $circle-diameter * 4;
+    border-bottom-width: 50px;
+  }
+  @media screen and (min-width: $laptop) {
+    border-bottom-right-radius: $circle-diameter * 5;
+    border-bottom-width: 60px;
+  }
+  @media screen and (min-width: $laptop-l) {
+    border-bottom-right-radius: $circle-diameter * 6;
+    border-bottom-width: 70px;
+  }
 }

@@ -359,6 +359,9 @@ th {
 body {
   background: #489BC4; }
 
+* {
+  box-sizing: border-box; }
+
 .container {
   margin: 0 5%; }
 
@@ -421,7 +424,11 @@ body {
   cursor: pointer;
   border: 10px solid #FCD05C;
   height: 20px;
-  width: 20px; }
+  position: relative;
+  width: 20px;
+  z-index: 100; }
+  .circle-button:hover {
+    border-color: #fccc4d; }
   @media screen and (min-width: 320px) {
     .circle-button {
       height: 40px;
@@ -456,10 +463,103 @@ body {
 .circle-row {
   display: inline-block; }
 
+.wing-blade-top {
+  border-top-right-radius: 40px;
+  border-top-style: solid;
+  border-top-color: #1ca769;
+  border-top-width: 10px; }
+  @media screen and (min-width: 320px) {
+    .wing-blade-top {
+      border-top-right-radius: 80px;
+      border-top-width: 20px; } }
+  @media screen and (min-width: 375px) {
+    .wing-blade-top {
+      border-top-right-radius: 100px;
+      border-top-width: 30px; } }
+  @media screen and (min-width: 425px) {
+    .wing-blade-top {
+      border-top-right-radius: 120px;
+      border-top-width: 40px; } }
+  @media screen and (min-width: 768px) {
+    .wing-blade-top {
+      border-top-right-radius: 160px;
+      border-top-width: 50px; } }
+  @media screen and (min-width: 1024px) {
+    .wing-blade-top {
+      border-top-right-radius: 200px;
+      border-top-width: 60px; } }
+  @media screen and (min-width: 1440px) {
+    .wing-blade-top {
+      border-top-right-radius: 240px;
+      border-top-width: 70px; } }
+
+.wing-blade-left {
+  border-bottom-left-radius: 40px;
+  border-bottom-style: solid;
+  border-bottom-color: #1ca769;
+  border-bottom-width: 10px;
+  transform: rotate(15deg);
+  border-top-right-radius: 0px; }
+  @media screen and (min-width: 320px) {
+    .wing-blade-left {
+      border-bottom-left-radius: 80px;
+      border-bottom-width: 20px; } }
+  @media screen and (min-width: 375px) {
+    .wing-blade-left {
+      border-bottom-left-radius: 100px;
+      border-bottom-width: 30px; } }
+  @media screen and (min-width: 425px) {
+    .wing-blade-left {
+      border-bottom-left-radius: 120px;
+      border-bottom-width: 40px; } }
+  @media screen and (min-width: 768px) {
+    .wing-blade-left {
+      border-bottom-left-radius: 160px;
+      border-bottom-width: 50px; } }
+  @media screen and (min-width: 1024px) {
+    .wing-blade-left {
+      border-bottom-left-radius: 200px;
+      border-bottom-width: 60px; } }
+  @media screen and (min-width: 1440px) {
+    .wing-blade-left {
+      border-bottom-left-radius: 240px;
+      border-bottom-width: 70px; } }
+
+.wing-blade-right {
+  border-bottom-right-radius: 40px;
+  border-bottom-style: solid;
+  border-bottom-color: #1ca769;
+  border-bottom-width: 10px;
+  border-top-left-radius: 0px;
+  transform: rotate(-15deg); }
+  @media screen and (min-width: 320px) {
+    .wing-blade-right {
+      border-bottom-right-radius: 80px;
+      border-bottom-width: 20px; } }
+  @media screen and (min-width: 375px) {
+    .wing-blade-right {
+      border-bottom-right-radius: 100px;
+      border-bottom-width: 30px; } }
+  @media screen and (min-width: 425px) {
+    .wing-blade-right {
+      border-bottom-right-radius: 120px;
+      border-bottom-width: 40px; } }
+  @media screen and (min-width: 768px) {
+    .wing-blade-right {
+      border-bottom-right-radius: 160px;
+      border-bottom-width: 50px; } }
+  @media screen and (min-width: 1024px) {
+    .wing-blade-right {
+      border-bottom-right-radius: 200px;
+      border-bottom-width: 60px; } }
+  @media screen and (min-width: 1440px) {
+    .wing-blade-right {
+      border-bottom-right-radius: 240px;
+      border-bottom-width: 70px; } }
+
 .spinner-wrapper {
   padding: 100px 0px;
-  transform: rotate(30deg);
-  transition: transform .5s linear; }
+  transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1); }
 
 .spinner-row {
   display: flex; }
@@ -487,48 +587,31 @@ body {
     .spinner-row--top {
       transform: translateY(60px); } }
 
+.spinner-row--center {
+  justify-content: center; }
+
 .spinner-row--bottom {
-  justify-content: space-around; }
-  .spinner-row--bottom .circle:first-child {
-    transform: translateX(5px); }
-    @media screen and (min-width: 320px) {
-      .spinner-row--bottom .circle:first-child {
-        transform: translateX(10px); } }
-    @media screen and (min-width: 375px) {
-      .spinner-row--bottom .circle:first-child {
-        transform: translateX(12.5px); } }
-    @media screen and (min-width: 425px) {
-      .spinner-row--bottom .circle:first-child {
-        transform: translateX(15px); } }
-    @media screen and (min-width: 768px) {
-      .spinner-row--bottom .circle:first-child {
-        transform: translateX(20px); } }
-    @media screen and (min-width: 1024px) {
-      .spinner-row--bottom .circle:first-child {
-        transform: translateX(25px); } }
-    @media screen and (min-width: 1440px) {
-      .spinner-row--bottom .circle:first-child {
-        transform: translateX(30px); } }
-  .spinner-row--bottom .circle:last-child {
-    transform: translateY(-5px); }
-    @media screen and (min-width: 320px) {
-      .spinner-row--bottom .circle:last-child {
-        transform: translateX(-10px); } }
-    @media screen and (min-width: 375px) {
-      .spinner-row--bottom .circle:last-child {
-        transform: translateX(-12.5px); } }
-    @media screen and (min-width: 425px) {
-      .spinner-row--bottom .circle:last-child {
-        transform: translateX(-15px); } }
-    @media screen and (min-width: 768px) {
-      .spinner-row--bottom .circle:last-child {
-        transform: translateX(-20px); } }
-    @media screen and (min-width: 1024px) {
-      .spinner-row--bottom .circle:last-child {
-        transform: translateX(-25px); } }
-    @media screen and (min-width: 1440px) {
-      .spinner-row--bottom .circle:last-child {
-        transform: translateX(-30px); } }
+  justify-content: space-around;
+  transform: translateY(-10px);
+  transition: transform .2s linear; }
+  @media screen and (min-width: 320px) {
+    .spinner-row--bottom {
+      transform: translateY(-20px); } }
+  @media screen and (min-width: 375px) {
+    .spinner-row--bottom {
+      transform: translateY(-25px); } }
+  @media screen and (min-width: 425px) {
+    .spinner-row--bottom {
+      transform: translateY(-30px); } }
+  @media screen and (min-width: 768px) {
+    .spinner-row--bottom {
+      transform: translateY(-40px); } }
+  @media screen and (min-width: 1024px) {
+    .spinner-row--bottom {
+      transform: translateY(-50px); } }
+  @media screen and (min-width: 1440px) {
+    .spinner-row--bottom {
+      transform: translateY(-60px); } }
 
 .spinner-button-block {
   display: flex;
