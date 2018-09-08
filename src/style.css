@@ -569,8 +569,11 @@ body {
 .spinner-wrapper {
   padding: 15px; }
 
-.spinner-body {
-  transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1); }
+.turbo-off {
+  transition: transform 2s cubic-bezier(0, 0, 0.2, 1); }
+
+.turbo-on {
+  transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1); }
 
 .spinner-row {
   display: flex; }
@@ -681,6 +684,7 @@ body {
 .spinner-control-panel-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 30px; }
 
 .button-group {
@@ -698,6 +702,16 @@ body {
   outline: none;
   padding: 15px 30px;
   position: relative;
+  transition: background .2s ease-in-out;
   z-index: 100; }
   .btn:not(:last-child) {
     margin-right: 10px; }
+
+.turbo-active {
+  background-color: #9c1d1d; }
+
+.status-bar {
+  color: #1ca769;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center; }

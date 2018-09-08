@@ -1,6 +1,7 @@
 .spinner-control-panel-wrapper{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 30px;
 }
 .button-group{
@@ -15,12 +16,25 @@
     color: #fff;
     font-size: 26px;
     font-weight: bold;
-    background-color: #c72525;
+    background-color: #c72525;;
     outline: none;
     padding: 15px 30px;
     position: relative;
+    transition: background .2s ease-in-out;
     z-index: 100;
     &:not(:last-child){
         margin-right: 10px;
     }
 }
+
+.turbo-active{
+    background-color: darken(#c72525,10);
+}
+
+.status-bar{
+    color: #1ca769;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+

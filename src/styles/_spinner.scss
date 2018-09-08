@@ -3,7 +3,13 @@
    
 }
 .spinner-body{
-  transition: transform 1.5s cubic-bezier(0, 0, 0.2, 1);
+  
+}
+.turbo-off{
+  transition: transform 2s cubic-bezier(0, 0, 0.2, 1);
+}
+.turbo-on{
+  transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .spinner-row{
