@@ -42,7 +42,7 @@
   justify-content: center;
 }
 .spinner-row--bottom{
-    justify-content: space-around;
+    justify-content: center;
     transform: translateY($circle-diameter / -4);
     transition: transform .2s linear;
   @media screen and (min-width: $mob-s) {

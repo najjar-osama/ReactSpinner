@@ -605,7 +605,7 @@ body {
   justify-content: center; }
 
 .spinner-row--bottom {
-  justify-content: space-around;
+  justify-content: center;
   transform: translateY(-10px);
   transition: transform .2s linear; }
   @media screen and (min-width: 320px) {
